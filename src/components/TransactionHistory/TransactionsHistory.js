@@ -13,12 +13,14 @@ export const TransactionsHistory = ({ items }) => {
       </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <TransactionItem
-            key={id}
-            type={type}
-            amount={amount}
-            currency={currency}
-          />
+          <tr>
+            <TransactionItem
+              key={id}
+              type={type}
+              amount={amount}
+              currency={currency}
+            />
+          </tr>
         ))}
       </tbody>
     </table>
