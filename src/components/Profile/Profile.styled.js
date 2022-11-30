@@ -19,11 +19,25 @@ export const ProfileBox = styled.div`
 
 export const StatsBar = styled.div`
   display: flex;
-  justify-content: space-between;
   list-style: none;
 `;
 
 export const Img = styled.img`
+  border-radius: 50%;
+  width: 100px;
+`;
+
+export const Name = styled.p`
+  border-radius: 50%;
+  width: 100px;
+`;
+
+export const Tag = styled.p`
+  border-radius: 50%;
+  width: 100px;
+`;
+
+export const Loc = styled.p`
   border-radius: 50%;
   width: 100px;
 `;
