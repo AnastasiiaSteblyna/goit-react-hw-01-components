@@ -1,3 +1,4 @@
+import { List } from 'components/FriendList/FriendList.styled';
 import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
 
@@ -6,14 +7,14 @@ export const Statistics = ({ title, stats }) => {
     <Container>
       <h2>{title}</h2>
 
-      <ul>
+      <List>
         {stats.map(({ id, label, percentage }) => (
           <li key={id}>
             <span>{label} </span>
             <span>{percentage} %</span>
           </li>
         ))}
-      </ul>
+      </List>
     </Container>
   );
 };

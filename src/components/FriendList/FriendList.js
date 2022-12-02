@@ -1,18 +1,19 @@
 import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
+import { List, Status } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
     <Container>
-    <ul>
+    <List>
       {friends.map(({ avatar, name, isOnline, id }) => (
         <li key={id}>
-          <span>{isOnline}</span>
+          <Status eventType={isOnline}></Status>
           <img src={avatar} alt="User avatar" width="48" />
           <p>{name}</p>
         </li>
       ))}
-    </ul>
+    </List>
     </Container>
   );
 };

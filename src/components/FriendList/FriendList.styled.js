@@ -1,9 +1,21 @@
 import styled from '@emotion/styled';
-import friends from '../data/friends.json'
 
-export const IsOnlineMark = styled.span`
+export const Status = styled.span`
+width: 10px;
+height: 10px;
+display: block;
+border-radius: 50%;
+background-color: ${p => {
+    switch(p.eventType){
+        case true :
+            return 'green';
+            case false:
+                return 'red'
+            default: return 'blue'
+    }
+} }
 `;
-
-function changeOnlineStatus(){
-
-}
+ export const List = styled.ul`
+ list-style:none;
+ display: flex;
+ `
