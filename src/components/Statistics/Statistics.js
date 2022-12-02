@@ -1,8 +1,9 @@
+import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section>
+    <Container>
       <h2>{title}</h2>
 
       <ul>
@@ -13,7 +14,7 @@ export const Statistics = ({ title, stats }) => {
           </li>
         ))}
       </ul>
-    </section>
+    </Container>
   );
 };
 

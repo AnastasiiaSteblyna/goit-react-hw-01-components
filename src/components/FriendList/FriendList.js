@@ -1,7 +1,9 @@
+import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
+    <Container>
     <ul>
       {friends.map(({ avatar, name, isOnline, id }) => (
         <li key={id}>
@@ -11,6 +13,7 @@ export const FriendList = ({ friends }) => {
         </li>
       ))}
     </ul>
+    </Container>
   );
 };
 
