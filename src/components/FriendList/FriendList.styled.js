@@ -9,13 +9,21 @@ background-color: ${p => {
     switch(p.eventType){
         case true :
             return 'green';
-            case false:
-                return 'red'
-            default: return 'blue'
+        case false:
+            return 'red'
+        default: 
+            return 'blue'
     }
 } }
 `;
- export const List = styled.ul`
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  `;
+
+export const List = styled.ul`
  list-style:none;
  display: flex;
  `

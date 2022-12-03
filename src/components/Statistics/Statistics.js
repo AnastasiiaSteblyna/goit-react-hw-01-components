@@ -1,11 +1,11 @@
-import { List } from 'components/FriendList/FriendList.styled';
-import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
+import { Container, List } from './Statistics.styled';
+
 
 export const Statistics = ({ title, stats }) => {
   return (
     <Container>
-      <h2>{title}</h2>
+      {title} && <h2>hello</h2>
 
       <List>
         {stats.map(({ id, label, percentage }) => (

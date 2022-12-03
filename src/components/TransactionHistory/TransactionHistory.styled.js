@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ItemColor = styled.tr`
+export const Row = styled.tr`
 margin: 10;
 color: silver;
 &:nth-child(2n + 1) {

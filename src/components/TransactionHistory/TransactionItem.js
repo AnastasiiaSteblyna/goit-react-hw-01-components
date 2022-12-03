@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import { ItemColor } from './TransactionHistory.styled';
+import { Row } from './TransactionHistory.styled';
 
 export const TransactionItem = ({ type, amount, currency }) => {
   return (
-    <ItemColor>
+    <Row>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
-    </ItemColor>
+    </Row>
   );
 };
 

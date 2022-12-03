@@ -17,7 +17,7 @@ export const ProfileBox = styled.div`
   border-radius: 15px;
 `;
 
-export const StatsBar = styled.div`
+export const StatsBar = styled.ul`
   display: flex;
   list-style: none;
 `;
@@ -28,16 +28,16 @@ export const Img = styled.img`
 `;
 
 export const Name = styled.p`
-  border-radius: 50%;
-  width: 100px;
+font-size: 20px;
+font-weight: 500;
 `;
 
 export const Tag = styled.p`
-  border-radius: 50%;
-  width: 100px;
+color: grey;
+font-size: 16px;
+  
 `;
 
 export const Loc = styled.p`
-  border-radius: 50%;
-  width: 100px;
+
 `;

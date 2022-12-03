@@ -1,6 +1,5 @@
-import { Container } from 'components/TransactionHistory/TransactionHistory.styled';
 import PropTypes from 'prop-types';
-import { List, Status } from './FriendList.styled';
+import { List, Status, Container } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
