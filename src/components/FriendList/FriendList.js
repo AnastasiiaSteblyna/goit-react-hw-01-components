@@ -4,15 +4,15 @@ import { List, Status, Container } from './FriendList.styled';
 export const FriendList = ({ friends }) => {
   return (
     <Container>
-    <List>
-      {friends.map(({ avatar, name, isOnline, id }) => (
-        <li key={id}>
-          <Status eventType={isOnline}></Status>
-          <img src={avatar} alt="User avatar" width="48" />
-          <p>{name}</p>
-        </li>
-      ))}
-    </List>
+      <List>
+        {friends.map(({ avatar, name, isOnline, id }) => (
+          <li key={id}>
+            <Status eventType={isOnline}></Status>
+            <img src={avatar} alt="User avatar" width="48" />
+            <p>{name}</p>
+          </li>
+        ))}
+      </List>
     </Container>
   );
 };

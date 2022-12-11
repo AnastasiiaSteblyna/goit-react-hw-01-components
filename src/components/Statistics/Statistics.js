@@ -1,13 +1,10 @@
 import PropTypes from 'prop-types';
 import { Container, List } from './Statistics.styled';
 
-
 export const Statistics = ({ title, stats }) => {
   return (
     <Container>
-      {{title} && (
-        <h2>Upload stats</h2>
-      )}
+      {{ title } && <h2>Upload stats</h2>}
       <List>
         {stats.map(({ id, label, percentage }) => (
           <li key={id}>

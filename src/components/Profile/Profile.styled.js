@@ -28,16 +28,13 @@ export const Img = styled.img`
 `;
 
 export const Name = styled.p`
-font-size: 20px;
-font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 `;
 
 export const Tag = styled.p`
-color: grey;
-font-size: 16px;
-  
+  color: grey;
+  font-size: 16px;
 `;
 
-export const Loc = styled.p`
-
-`;
+export const Loc = styled.p``;
